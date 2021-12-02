@@ -90,7 +90,11 @@ namespace Lab10Starter
         /// </summary>
         private void ResetGame()
         {
-
+            Button[] buttons = { Tile00, Tile01, Tile02, Tile10, Tile11, Tile12, Tile20, Tile21, Tile22 };
+            foreach (Button button in buttons)
+            {
+                button.Content = "";
+            }
         }
 
     }
