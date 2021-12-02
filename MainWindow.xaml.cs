@@ -69,7 +69,8 @@ namespace Lab10Starter
             if (gameOver)
             {
                 CelebrateVictory(victor);
-                
+                XScoreLBL.Content = "X's Score: " + ticTacToe.XScore;
+                OScoreLBL.Content = "O's Score: " + ticTacToe.OScore;
             }
         }
 
@@ -95,6 +96,8 @@ namespace Lab10Starter
             {
                 button.Content = "";
             }
+
+            ticTacToe.ResetGame();
         }
 
     }
